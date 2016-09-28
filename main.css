@@ -14,15 +14,59 @@ body {
 nav {
   margin: 0 auto;
   border: 1px solid white;
-  width: 60%;
+  width: 80.6%;
+  padding: .5em 0 .5em .5em;
+}
+
+nav img {
+  border-radius: 50%;
 }
 
 header {
-  background: url("http://placebear.com/1280/525");
+  background: url("images/wave.jpg");
 }
 
-header h5 {
-  
+.title h1 {
+  color: white;
+  position: static;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 5.5em;
+  margin: 0;
+  /*text-shadow: 20px 1px 20px rgb(33, 102, 153);*/
+  text-shadow: 10px black;
+}
+
+.title {
+  padding-top: 8.75em;
+  padding-bottom: 12em;
+  text-align: center;
+  /*margin: 0 auto;*/
+}
+
+.title span {
+  /*position: may need to make this negative*/
+  font-size: .2em;
+}
+
+header br {
+  color: rgb(10, 57, 91);
+  position: relative;
+}
+
+.brand {
+  font-size: .5em;
+  color: rgb(8, 52, 82);
+}
+
+ul.search li {
+  display: inline-block;
+}
+
+.search {
+  font-size: .5em;
+  color: rgb(8, 52, 82);
+  float: right;
 }
 
 .hero {

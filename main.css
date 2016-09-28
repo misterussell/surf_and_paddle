@@ -1,0 +1,32 @@
+/*fa-comment icon &#xf075;*/
+/*fa-cloud-download icon &#xf0ed;*/
+/*fa-share-square-o &#xf045;*/
+/*search mag &#xf002;*/
+
+/*header font-family: 'Oswald', sans-serif;*/
+/*copy font-family: 'Open Sans', sans-serif;*/
+
+body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  margin: 0 auto;
+  border: 1px solid white;
+  width: 60%;
+}
+
+header {
+  background: url("http://placebear.com/1280/525");
+}
+
+header h5 {
+  
+}
+
+.hero {
+  z-index: 0;
+  width: 100%;
+  background-color: rgba(24, 108, 179, .75);
+}

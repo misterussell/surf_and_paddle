@@ -9,6 +9,7 @@
 body {
   width: 100%;
   /*font-family: 'Open Sans', sans-serif;*/
+  font-size: 62.5%;
 }
 
 nav {
@@ -21,11 +22,14 @@ nav {
 
 nav img {
   border-radius: 50vw;
-  height: 3.5vw;
+  width: 10vw;
+  /*height: 3.5vw;
+  vertical-align: middle;*/
 }
 
 header {
   background: url("images/wave.jpg");
+  background-size: cover;
 }
 
 .blue_wash {
@@ -36,12 +40,12 @@ header {
 }
 
 .title {
-  padding-top: 10.5vw;
+  /*padding-top: 10.5vw;
   padding-bottom: 12vw;
   text-align: center;
   margin: 0 auto;
-  height: 26.5vh;
-  /*margin: 0 auto;*/
+  height: 26.5vh;*/
+  text-align: center;
 }
 
 .title h1 {
@@ -60,23 +64,26 @@ header {
 
 .title span {
   /*position: may need to make this negative*/
-  font-size: 1em;
+  font-size: 1.5em;
   color: rgb(9, 54, 85);
-  position: relative;
-  top: -9px;
+  /*position: relative;
+  top: -9px;*/
   font-weight: 550;
 }
 
 .brand {
-  display: inline-block;
+  display: block;
 }
 
 .brand span {
-  font-size: 1em;
+  /*font-size: 1em;
   color: rgb(8, 52, 82);
   letter-spacing: -0.01em;
   display: inline-block;
   font-weight: 550;
+  vertical-align: middle;
+  padding-top: 0.1em;*/
+  display: none;
 }
 
 .search {
@@ -84,9 +91,9 @@ header {
   color: rgb(8, 52, 82);
   float: right;
   letter-spacing: -0.009em;
-  height: 4.75em;
+  /*height: 4.75em;
   padding-right: 2.5em;
-  padding-top: .7em;
+  padding-top: .7em;*/
 }
 
 .search a {
@@ -103,7 +110,6 @@ header {
 }*/
 
 main {
-  width: 80vw;
   /*width: 47.5vw; used when buffer was in place*/
   /*background: pink;*/
   /*display: inline-block;*/
@@ -117,33 +123,110 @@ h2 {
   font-size: 4em;
   font-weight: 500;
   letter-spacing: -0.01em;
-  margin: 9.25vh 0 0 0;
   line-height: 110%;
 }
 
+.post h2 {
+  margin: 9.25vh 0 0 0;
+}
+
 .post {
-  display: inline-block;
-  width: 48vw;
-  padding-left: 2vw;
-  margin-left: 2vw;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.post a:link {
+  color: RGB(163, 180, 190);
+}
+
+.post a:link:hover {
+  color: RGB(16, 109, 179);
 }
 
 .sidebar {
   /*width: 22vw;*/
   /*background: grey;*/
   /*padding-left: 6.5vw;*/
-  display: inline-block;
-  width: 27vw;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  /*width: 27vw;*/
 
 }
 
-.sidebar img {
+.ad {
     max-width: 100%;
     display: block;
 }
 
+
 aside {
-  
+  width: 90%;
+  margin: 0 auto;
+}
+
+.popular h2 {
+  text-align: center;
+}
+aside a:link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+}
+
+aside ul {
+  padding: 0;
+}
+
+aside li {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+aside li h3 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+aside li img {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background: RGB(8, 52, 82);
+  color: RGB(163, 179, 191);
+  font-family: 'Open Sans', sans-serif;
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.logo_block {
+  display: inline-block;
+}
+
+.logo_block span {
+  vertical-align: middle;
+}
+
+.logo_block img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+footer ul {
+  float: right;
 }
 
 /* Buttons */
@@ -152,30 +235,176 @@ aside {
   content: '';
   display: block;
   clear: both;
+  font-weight: lighter;
 }
 
 .button {
   display: inline-block;
   color: white;
-  font-size: .75em;
   text-align: center;
+  box-sizing: border-box;
+  font-size: 1.5em;
 }
 
-/*.share_button {
-  display: inline-block;
-  color: white;
-  font-size: .75em;
-  text-align: center;
-}*/
-
 .button_left {
-  width: 30px;
+  /*padding-top: .45em;
+  padding-right: .45em;
+  padding-bottom: .45em;
+  padding-left: .45em;*/
   background: RGB(94, 104, 111);
   display: inline-block;
 }
 
 .button_right {
-  width: 125px;
   background: rgb(164, 179, 191);
+  padding-top: .5em;
+  padding-bottom: .5em;
   float: right;
+  /*share color RGB(16, 109, 179)*/
+
+}
+
+
+
+@media (min-width: 800px) {
+
+  nav {
+    margin: 0 auto;
+    /*border: 1px solid white;*/
+    width: 80vw;
+    padding: .5em 0 .5em .5em;
+
+  }
+
+  nav img {
+    border-radius: 50vw;
+    width: 3.5vw;
+    vertical-align: middle;
+  }
+
+  .title {
+    padding-top: 10.5vw;
+    padding-bottom: 12vw;
+    text-align: center;
+    height: 26.5vh;
+    margin: 0 auto;
+  }
+
+  .title h1 {
+    color: white;
+    position: static;
+    font-family: 'Open Sans', serif;
+    font-weight: normal;
+    font-size: 8.25vw;
+    margin: 0;
+    /*text-shadow: 20px 1px 20px rgb(33, 102, 153);*/
+    text-shadow: 0px 2px .2px rgba(45, 93, 135, .75);
+    letter-spacing: -0.045em;
+    padding-bottom: 0;
+  }
+
+  .title span {
+    /*position: may need to make this negative*/
+    font-size: 1em;
+    color: rgb(9, 54, 85);
+    position: relative;
+    top: -9px;
+    font-weight: 550;
+  }
+
+  .brand span {
+    font-size: 1em;
+    color: rgb(8, 52, 82);
+    letter-spacing: -0.01em;
+    display: inline-block;
+    font-weight: 550;
+    vertical-align: middle;
+    padding-top: 0.1em;
+  }
+
+  .search {
+    font-size: 1.1em;
+    color: rgb(8, 52, 82);
+    float: right;
+    letter-spacing: -0.009em;
+    height: 4.75em;
+    padding-right: 2.5em;
+    padding-top: .7em;
+  }
+
+  .main {
+    width: 75vw;
+  }
+
+  .post {
+    width: 60%;
+    padding-left: 2vw;
+    margin-left: 2vw;
+    display: inline-block;
+  }
+
+  .sidebar {
+    width: 20%;
+    display: inline-block;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  aside a:link {
+    text-decoration: none;
+    color: RGB(8, 52, 82);
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+  }
+
+  aside li h3 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  aside ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  aside li {
+    display: inline-block;
+    width: 25vw;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  aside li a:link:hover {
+    color: white;
+  }
+
+  img.popular {
+    width: 100%;
+    padding: 0;
+    margin:0;
+
+  }
+
+  img.popular:hover {
+    background-color: none;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .button {
+    display: block;
+    text-align: center;
+  }
+
+  .button_right {
+    display: none;
+  }
+
 }

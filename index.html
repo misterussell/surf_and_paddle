@@ -2,41 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surf & Paddle Co.</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="screen"/>
     <link rel="stylesheet" href="main.css" media="screen" />
   </head>
   <body>
     <header>
       <div class="blue_wash">
         <nav>
+          <!-- <div class="brand">
+          <img src="images/logo.png" alt="logo" /img>
+          <span>SURF & PADDLE CO. BLOG</span>
+          </div> -->
+          <div class="search">
+                <a href="/about.html" alt="about">ABOUT</a>
+                <a href="/search.html" alt="search">SEARCH</a>
+                <i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i><!-- insert follow here -->
+          </div>
           <div class="brand">
           <img src="images/logo.png" alt="logo" /img>
           <span>SURF & PADDLE CO. BLOG</span>
           </div>
-          <div class="search">
-                <a href="/about.html" alt="about">ABOUT</a>
-                &nbsp;&nbsp;
-                <a href="/search.html" alt="search">SEARCH</a> <!-- insert follow here -->
-          </div>
         </nav>
         <div class="title">
           <h1>SURF & PADDLE CO.</h1>
-          <span>An Ironyard Academy Project</span>
+          <span>An Ironyard Academy Project Est. Summer 2014</span>
         </div>
       </div>
     </header>
     <main>
       <div class="post">
         <h2>A FANTASTIC ENGAGING HEADLINE GOES HERE</h2>
+        <span class="post_date">
+          <a href="calendar.html" alt="Cal">Monday, June 7th 9:22pm</a></span>
+        </span>
+        <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
         <div class="feedback">
           <div class="button">
             <div class="button_left">
-              O
+              <i class="fa fa-comment" aria-hidden="true"></i>
             </div>
             <div class="button_right">
               Read Comments
@@ -44,7 +55,7 @@
           </div>
           <div class="button">
             <div class="button_left">
-              ^
+              <i class="fa fa-cloud-download" aria-hidden="true"></i>
             </div>
             <div class="button_right">
               Read Later
@@ -52,7 +63,7 @@
           </div>
           <div class="button"><!-- alt class share button avail --->
             <div class="button_left">
-              /
+              <i class="fa fa-share-square-o" aria-hidden="true"></i>
             </div>
             <div class="button_right">
               Share This Post
@@ -61,16 +72,49 @@
         </div>
       </div>
       <div class="sidebar">
-        <img src="images/shark_ad.jpg" alt="ad" width="100%"/>
+        <img src="images/shark_ad.jpg" alt="ad" class="ad"/>
         smod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
     </main>
-    <aside> <!--Will contain most popular posts -->
-
+    <aside class="popular"> <!--Will contain most popular posts -->
+      <h2>MOST POPULAR POSTS</h2>
+      <ul class>
+        <li>
+          <a href="popular_post1">
+            <h3>ANOTHER COOL POST</h3>
+            <img src="images/pic1.jpg"/>
+          </a>
+        </li>
+        <li>
+          <a href="popular_post2">
+            <h3>POST TITLE</h3>
+            <img src="images/pic2.jpg"/>
+          </a>
+        </li>
+        <li>
+          <a href="popular_post3">
+            <h3>HERE'S ANOTHER LONGER POST TITLE</h3>
+            <img src="images/pic3.jpg"/>
+          </a>
+        </li>
+        <li>
+          <a href="popular_post4">
+            <h3>OH COOL A POST!</h3>
+            <img src="images/pic4.jpg"/>
+          </a>
+        </li>
+      </ul>
     </aside>
     <footer>
-       <!--Will contain logo + and right float nav menu options -->
-
+      <div class="logo_block">
+        <img src="images/tiylogo.png" alt="tiylogo" /> <span>The Ironyard Copyright 2013, All Rights Reserved
+      </div>
+      <ul>
+        <li>Nav Item 1</li>
+        <li>Nav Item 2</li>
+        <li>Nav Item 3</li>
+        <li>Nav Item 4</li>
+      </ul>
     </footer>
 
   </body>

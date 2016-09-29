@@ -13,64 +13,129 @@ body {
 
 nav {
   margin: 0 auto;
-  border: 1px solid white;
-  width: 80.6%;
+  /*border: 1px solid white;*/
+  width: 80vw;
   padding: .5em 0 .5em .5em;
+
 }
 
 nav img {
-  border-radius: 50%;
+  border-radius: 50vw;
+  height: 3.5vw;
 }
 
 header {
   background: url("images/wave.jpg");
 }
 
-.title h1 {
-  color: white;
-  position: static;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-  font-size: 5.5em;
-  margin: 0;
-  /*text-shadow: 20px 1px 20px rgb(33, 102, 153);*/
-  text-shadow: 10px black;
+.blue_wash {
+  z-index: 0;
+  width: 100%;
+  background-color: rgba(24, 112, 182, 0.75);
+
 }
 
 .title {
-  padding-top: 8.75em;
-  padding-bottom: 12em;
+  padding-top: 11vw;
+  padding-bottom: 12vw;
   text-align: center;
+  margin: 0 auto;
+  height: 26.5vh;
   /*margin: 0 auto;*/
+}
+
+.title h1 {
+  color: white;
+  position: static;
+  font-family: 'Open Sans', serif;
+  font-weight: normal;
+  font-size: 8.25vw;
+  margin: 0;
+  /*text-shadow: 20px 1px 20px rgb(33, 102, 153);*/
+  text-shadow: 0px 2px .2px rgba(45, 93, 135, .75);
+  letter-spacing: -0.045em;
+  padding-bottom: 0;
+
 }
 
 .title span {
   /*position: may need to make this negative*/
-  font-size: .2em;
-}
-
-header br {
-  color: rgb(10, 57, 91);
+  font-size: 0.85em;
+  color: rgb(9, 54, 85);
   position: relative;
+  top: -9px;
+  font-weight: 550;
 }
 
 .brand {
-  font-size: .5em;
-  color: rgb(8, 52, 82);
-}
-
-ul.search li {
   display: inline-block;
 }
 
-.search {
-  font-size: .5em;
+.brand span {
+  font-size: 1em;
   color: rgb(8, 52, 82);
-  float: right;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  font-weight: 550;
 }
 
-.hero {
-  z-index: 0;
-  width: 100%;
-  background-color: rgba(24, 108, 179, .75);
+.search {
+  font-size: 1.2em;
+  color: rgb(8, 52, 82);
+  float: right;
+  letter-spacing: -0.009em;
+  height: 5em;
+  padding-right: 2.5em;
+  padding-top: .5em;
+}
+
+.search a {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: rgb(8, 52, 82);
+  font-weight: 400;
+}
+
+.horizontal_buffer {
+  width: 5vw;
+  display: inline-block;
+
+}
+
+main {
+  width: 40vw;
+  background: pink;
+  display: inline-block;
+
+}
+
+.sidebar {
+  width: 30vw;
+  background: grey;
+  display: inline-block;
+
+}
+
+/* Buttons */
+
+.feedback {
+  content: '';
+  display: block;
+  clear: both;
+  color: white;
+  font-size: .75em;
+  width: 155px;
+  text-align: center;
+}
+
+.button_left {
+  width: 30px;
+  background: RGB(94, 104, 111);
+  display: inline-block;
+}
+
+.button_right {
+  width: 125px;
+  background: rgb(164, 179, 191);
+  float: right;
 }

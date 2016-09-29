@@ -96,20 +96,22 @@ header {
   font-weight: 400;
 }
 
-.horizontal_buffer {
+/*.horizontal_buffer {
   width: 12.5vw;
   display: inline-block;
 
-}
+}*/
 
 main {
-  width: 47.5vw;
+  width: 80vw;
+  /*width: 47.5vw; used when buffer was in place*/
   /*background: pink;*/
-  display: inline-block;
+  /*display: inline-block;*/
   color: rgb(108, 116, 122);
+  margin: 0 auto;
 }
 
-.headline h1 {
+h2 {
   color: rgb(8, 52, 82);
   font-family: 'Oswald', sans-serif;
   font-size: 4em;
@@ -119,16 +121,29 @@ main {
   line-height: 110%;
 }
 
-.headline {
-
+.post {
+  display: inline-block;
+  width: 48vw;
+  padding-left: 2vw;
+  margin-left: 2vw;
 }
 
 .sidebar {
-  width: 22vw;
+  /*width: 22vw;*/
   /*background: grey;*/
+  /*padding-left: 6.5vw;*/
   display: inline-block;
-  padding-left: 6.5vw;
+  width: 27vw;
 
+}
+
+.sidebar img {
+    max-width: 100%;
+    display: block;
+}
+
+aside {
+  
 }
 
 /* Buttons */

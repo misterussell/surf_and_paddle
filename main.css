@@ -8,7 +8,7 @@
 
 body {
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
 }
 
 nav {
@@ -36,7 +36,7 @@ header {
 }
 
 .title {
-  padding-top: 11vw;
+  padding-top: 10.5vw;
   padding-bottom: 12vw;
   text-align: center;
   margin: 0 auto;
@@ -60,7 +60,7 @@ header {
 
 .title span {
   /*position: may need to make this negative*/
-  font-size: 0.85em;
+  font-size: 1em;
   color: rgb(9, 54, 85);
   position: relative;
   top: -9px;
@@ -80,13 +80,13 @@ header {
 }
 
 .search {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: rgb(8, 52, 82);
   float: right;
   letter-spacing: -0.009em;
-  height: 5em;
+  height: 4.75em;
   padding-right: 2.5em;
-  padding-top: .5em;
+  padding-top: .7em;
 }
 
 .search a {
@@ -97,22 +97,37 @@ header {
 }
 
 .horizontal_buffer {
-  width: 5vw;
+  width: 12.5vw;
   display: inline-block;
 
 }
 
 main {
-  width: 40vw;
-  background: pink;
+  width: 47.5vw;
+  /*background: pink;*/
   display: inline-block;
+  color: rgb(108, 116, 122);
+}
+
+.headline h1 {
+  color: rgb(8, 52, 82);
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 9.25vh 0 0 0;
+  line-height: 110%;
+}
+
+.headline {
 
 }
 
 .sidebar {
-  width: 30vw;
-  background: grey;
+  width: 22vw;
+  /*background: grey;*/
   display: inline-block;
+  padding-left: 6.5vw;
 
 }
 
@@ -122,11 +137,21 @@ main {
   content: '';
   display: block;
   clear: both;
+}
+
+.button {
+  display: inline-block;
   color: white;
   font-size: .75em;
-  width: 155px;
   text-align: center;
 }
+
+/*.share_button {
+  display: inline-block;
+  color: white;
+  font-size: .75em;
+  text-align: center;
+}*/
 
 .button_left {
   width: 30px;

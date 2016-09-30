@@ -14,7 +14,6 @@ body {
 
 nav {
   margin: 0 auto;
-  /*border: 1px solid white;*/
   width: 80vw;
   padding: .5em 0 .5em .5em;
 
@@ -23,8 +22,6 @@ nav {
 nav img {
   border-radius: 50vw;
   width: 10vw;
-  /*height: 3.5vw;
-  vertical-align: middle;*/
 }
 
 header {
@@ -35,7 +32,7 @@ header {
 .blue_wash {
   z-index: 0;
   width: 100%;
-  background-color: rgba(24, 112, 182, 0.75);
+  background-color: rgba(7, 111, 186, 0.75);
 
 }
 
@@ -63,11 +60,8 @@ header {
 }
 
 .title span {
-  /*position: may need to make this negative*/
   font-size: 1.5em;
   color: rgb(9, 54, 85);
-  /*position: relative;
-  top: -9px;*/
   font-weight: 550;
 }
 
@@ -76,13 +70,6 @@ header {
 }
 
 .brand span {
-  /*font-size: 1em;
-  color: rgb(8, 52, 82);
-  letter-spacing: -0.01em;
-  display: inline-block;
-  font-weight: 550;
-  vertical-align: middle;
-  padding-top: 0.1em;*/
   display: none;
 }
 
@@ -91,9 +78,6 @@ header {
   color: rgb(8, 52, 82);
   float: right;
   letter-spacing: -0.009em;
-  /*height: 4.75em;
-  padding-right: 2.5em;
-  padding-top: .7em;*/
 }
 
 .search a {
@@ -103,37 +87,48 @@ header {
   font-weight: 400;
 }
 
-/*.horizontal_buffer {
-  width: 12.5vw;
-  display: inline-block;
-
-}*/
-
 main {
-  /*width: 47.5vw; used when buffer was in place*/
-  /*background: pink;*/
-  /*display: inline-block;*/
   color: rgb(108, 116, 122);
+  margin: 0 auto;
+}
+
+/*POST START*/
+
+.post {
+  display: block;
+  width: 90%;
   margin: 0 auto;
 }
 
 h2 {
   color: rgb(8, 52, 82);
   font-family: 'Oswald', sans-serif;
-  font-size: 4em;
+  font-size: 6.3em;
   font-weight: 500;
   letter-spacing: -0.01em;
   line-height: 110%;
+  margin: 0;
 }
 
-.post h2 {
-  margin: 9.25vh 0 0 0;
+.author {
+  font-size: 1.25em;
 }
 
-.post {
-  display: block;
-  width: 90%;
-  margin: 0 auto;
+.post .author img {
+  display: none;
+}
+
+.post .author h4 {
+  display: none;
+}
+
+.post_date {
+  color: color: RGB(163, 180, 190);
+  display: inline-block;
+}
+
+.post_date {
+  color: RGB(163, 180, 190);
 }
 
 .post a:link {
@@ -144,30 +139,75 @@ h2 {
   color: RGB(16, 109, 179);
 }
 
-.sidebar {
-  /*width: 22vw;*/
-  /*background: grey;*/
-  /*padding-left: 6.5vw;*/
-  display: block;
-  width: 90%;
-  margin: 0 auto;
-  /*width: 27vw;*/
+.post p {
+  font-size: 1.59em;
+  line-height: 1.65em;
+}
 
+/*SIDEBAR START*/
+
+.sidebar {
+  display: inline-block;
+  margin: 0 auto;
+  width: 27.5%;
+  text-align: center;
+}
+
+.sidebar .author img {
+  border-radius: 50%;
+  width: 5.25rem;
+  display: inline-block;
+}
+
+.sidebar .author h4 {
+  margin: 0;
+}
+
+.sidebar ul {
+  margin: 0 auto;
+  padding: 2em 0 0 0;
+  width: 80%;
+}
+
+.sidebar li {
+  display: inline-block;
+  padding: 0;
+  width: 25%;
+  padding: 0.05em;
+
+}
+
+.sidebar li:nth-child(2) {
+  border-color: rgb(250, 250, 250);
+  border-width: 0 0.01em 0 0.01em;
+  border-style: solid;
 }
 
 .ad {
-    max-width: 100%;
-    display: block;
+  display: block;
+  width: 10em;
+  margin: 0 auto;
+}
+
+.ad_info {
+  display: block;
+  text-align: right;
 }
 
 
+.sidebar p {
+  display: none;
+}
+
 aside {
   width: 90%;
-  margin: 0 auto;
 }
 
 .popular h2 {
   text-align: center;
+  border-top: .01em solid RGB(231, 235, 238);
+  padding-top: 2em;
+
 }
 aside a:link {
   text-decoration: none;
@@ -199,8 +239,8 @@ aside li h3 {
 aside li img {
   width: 100%;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  height: 10em;
+  margin: 0 1em 0 1em;
 }
 
 footer {
@@ -210,23 +250,45 @@ footer {
   content: '';
   display: block;
   clear: both;
-}
-
-.logo_block {
-  display: inline-block;
-}
-
-.logo_block span {
-  vertical-align: middle;
-}
-
-.logo_block img {
-  width: 50px;
-  vertical-align: middle;
+  width: 100%;
+  font-size: 1.5em;
 }
 
 footer ul {
-  float: right;
+  margin: 0 auto;
+  padding: 2em 0 0 0;
+  width: 80%;
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0;
+  width: 25%;
+  padding: 0.05em;
+
+}
+
+footer li:nth-child(2) {
+  border-color: rgb(149, 164, 176);
+  border-width: 0 0.01em 0 0.01em;
+  border-style: solid;
+}
+
+.logo_block {
+  margin: 0 auto;
+  width: 55%;
+}
+
+.logo_block span {
+  display: inline-block;
+  text-align: center;
+}
+
+.logo_block img {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
 }
 
 /* Buttons */
@@ -243,7 +305,6 @@ footer ul {
   color: white;
   text-align: center;
   box-sizing: border-box;
-  font-size: 1.5em;
 }
 
 .button_left {
@@ -253,24 +314,20 @@ footer ul {
   padding-left: .45em;*/
   background: RGB(94, 104, 111);
   display: inline-block;
+  font-size: 1.6em;
 }
 
 .button_right {
   background: rgb(164, 179, 191);
-  padding-top: .5em;
-  padding-bottom: .5em;
   float: right;
-  /*share color RGB(16, 109, 179)*/
-
 }
 
 
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   nav {
     margin: 0 auto;
-    /*border: 1px solid white;*/
     width: 80vw;
     padding: .5em 0 .5em .5em;
 
@@ -282,9 +339,50 @@ footer ul {
     vertical-align: middle;
   }
 
+  .search {
+    font-size: 1.75em;
+    color: rgb(8, 52, 82);
+    float: right;
+    letter-spacing: -0.009em;
+    padding-top: .7em;
+    padding-right: 1vw;
+    vertical-align: middle;
+  }
+
+  .search a {
+    vertical-align: middle;
+  }
+
+  
+
+  .search i {
+    font-size: 0.75em;
+    vertical-align: middle;
+  }
+
+  .brand {
+    padding-top: 0.35vw;
+
+  }
+
+  .brand img {
+    padding-left: 1.25vw;
+  }
+
+  .brand span {
+    font-size: 1.55em;
+    color: rgb(8, 52, 82);
+    letter-spacing: -0.01em;
+    display: inline-block;
+    font-weight: 550;
+    vertical-align: middle;
+    padding-left: 1vw;
+  }
+
   .title {
-    padding-top: 10.5vw;
-    padding-bottom: 12vw;
+    padding-top: 11vw;
+    padding-bottom: 12.75vw;
+    padding-left: 2vw;
     text-align: center;
     height: 26.5vh;
     margin: 0 auto;
@@ -297,59 +395,101 @@ footer ul {
     font-weight: normal;
     font-size: 8.25vw;
     margin: 0;
-    /*text-shadow: 20px 1px 20px rgb(33, 102, 153);*/
     text-shadow: 0px 2px .2px rgba(45, 93, 135, .75);
     letter-spacing: -0.045em;
     padding-bottom: 0;
   }
 
   .title span {
-    /*position: may need to make this negative*/
-    font-size: 1em;
+    font-size: 1.5em;
     color: rgb(9, 54, 85);
     position: relative;
-    top: -9px;
+    top: -7px;
     font-weight: 550;
   }
 
-  .brand span {
-    font-size: 1em;
-    color: rgb(8, 52, 82);
-    letter-spacing: -0.01em;
-    display: inline-block;
-    font-weight: 550;
-    vertical-align: middle;
-    padding-top: 0.1em;
-  }
-
-  .search {
-    font-size: 1.1em;
-    color: rgb(8, 52, 82);
-    float: right;
-    letter-spacing: -0.009em;
-    height: 4.75em;
-    padding-right: 2.5em;
-    padding-top: .7em;
-  }
-
-  .main {
-    width: 75vw;
+  main {
+      width: 87.5%;
+      margin: 0 auto;
   }
 
   .post {
     width: 60%;
-    padding-left: 2vw;
-    margin-left: 2vw;
     display: inline-block;
   }
 
-  .sidebar {
-    width: 20%;
+  .author {
+    font-size: 1.25em;
+  }
+
+  .post .author img {
+    width: 2.25em;
+    border-radius: 50%;
     display: inline-block;
+    vertical-align: middle;
+  }
+
+  .post .author h4 {
+    color: RGB(16, 109, 179);
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    padding-left: 0.5em;
+  }
+
+  .post_date {
+    color: RGB(163, 180, 190);
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .sidebar {
+    width: 22%;
+    display: inline-block;
+  }
+
+  .sidebar .author {
+    text-transform: uppercase;
+    color: RGB(16, 109, 179);
+  }
+
+  .sidebar .author h4 {
+    font-weight: 400;
+    letter-spacing: 0.006em;
+  }
+
+  .sidebar .author img {
+    border-radius: 50%;
+    width: 5.25rem;
+  }
+
+  .sidebar ul {
+    padding: 0;
+  }
+
+  ul li a {
+    color: RGB(173, 187, 198);
+    text-decoration: none;
+  }
+
+  .ad {
+    width: 100%;
+  }
+
+  .sidebar p {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.35em;
+    line-height: 1.75em;
   }
 
   aside {
     width: 100%;
+  }
+
+  .popular h2 {
+    padding-top: 2rem;
   }
 
   aside a:link {
@@ -372,10 +512,10 @@ footer ul {
   }
 
   aside li {
-    display: inline-block;
-    width: 25vw;
+    width: 25%;
     margin: 0;
     padding: 0;
+    float: right;
 
   }
 
@@ -383,15 +523,49 @@ footer ul {
     color: white;
   }
 
-  img.popular {
+  aside li img {
     width: 100%;
+    text-align: center;
+    height: auto;
+    margin: 0;
     padding: 0;
-    margin:0;
-
   }
 
-  img.popular:hover {
-    background-color: none;
+  .logo_block {
+    display: inline-block;
+  }
+
+  .logo_block span {
+    vertical-align: middle;
+  }
+
+  .logo_block img {
+    width: 50px;
+    vertical-align: middle;
+  }
+
+  .button {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .button_left {
+    /*padding-top: .45em;
+    padding-right: .45em;
+    padding-bottom: .45em;
+    padding-left: .45em;*/
+    background: RGB(94, 104, 111);
+    display: inline-block;
+    font-size: 1.6em;
+  }
+
+  .button_right {
+    background: rgb(164, 179, 191);
+    float: right;
+    font-size: 1.25em;
+    vertical-align: middle;
   }
 
 }

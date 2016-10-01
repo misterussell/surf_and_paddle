@@ -129,25 +129,26 @@ h2 {
   color: RGB(163, 180, 190);
 }
 
-.post a:link {
+main a:link {
   color: RGB(163, 180, 190);
 }
 
-.post a:link:hover {
+main a:link:hover {
   color: RGB(16, 109, 179);
 }
 
 .post p {
   font-size: 1.59em;
   line-height: 1.65em;
+  color: RGB(117, 125, 131);
 }
 
 .pullquote {
   color: rgb(18, 109, 178);
   font-size: 1.75em;
   display: block;
-  border-left: 0.126em solid rgb(163, 180, 190);
-  padding: 0.75em 0.5em 0.5em .5em;
+  border-left: 0.1em solid rgb(163, 180, 190);
+  padding: 0.75em 0.5em 0.47em .5em;
   text-transform: uppercase;
   margin: 0.5em 0 0.5em 0;
 }
@@ -157,8 +158,9 @@ h2 {
 .sidebar {
   display: inline-block;
   margin: 0 auto;
-  width: 27.5%;
+  width: 100%;
   text-align: center;
+  vertical-align: top;
 }
 
 .sidebar .author img {
@@ -193,13 +195,16 @@ h2 {
 
 .ad {
   display: block;
-  width: 10em;
+  width: 90%;
   margin: 0 auto;
 }
+
 
 .ad_info {
   display: block;
   text-align: right;
+  margin-top: 1em;
+  font-size: 1.275em;
 }
 
 
@@ -470,9 +475,10 @@ footer {
   }
 
   .sidebar {
-    width: 22%;
+    width: 25.2%;
     display: inline-block;
-    margin-left: 7.25vw;
+    margin-left: 5.75vw;
+    padding-top: 4.8vw;
   }
 
   .sidebar .author {
@@ -500,7 +506,9 @@ footer {
   }
 
   .ad {
-    width: 100%;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
   }
 
   .sidebar p {
@@ -508,6 +516,7 @@ footer {
     text-align: left;
     font-size: 1.35em;
     line-height: 1.75em;
+    color: RGB(178, 191, 201);
   }
 
   aside {

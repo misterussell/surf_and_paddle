@@ -159,7 +159,6 @@ main a:link:hover {
   display: inline-block;
   margin: 0 auto;
   width: 100%;
-  text-align: center;
   vertical-align: top;
 }
 
@@ -167,16 +166,21 @@ main a:link:hover {
   border-radius: 50%;
   width: 5.25rem;
   display: inline-block;
+  text-align: center;
+
 }
 
 .sidebar .author h4 {
   margin: 0;
+  text-align: center;
+
 }
 
 .sidebar ul {
   margin: 0 auto;
   padding: 2em 0 0 0;
   width: 80%;
+  font-size: 1.25em;
 }
 
 .sidebar li {
@@ -203,12 +207,16 @@ main a:link:hover {
 .ad_info {
   display: block;
   text-align: right;
-  margin-top: 1em;
+  margin-top: 0.70em;
   font-size: 1.275em;
 }
 
 
 .sidebar p {
+  display: none;
+}
+
+.sidebar .sidebar_heading {
   display: none;
 }
 
@@ -407,7 +415,7 @@ footer {
     padding-bottom: 12vw;
     padding-left: 2vw;
     text-align: center;
-    height: 26.5vh;
+    height: 25.5vh;
     margin: 0 auto;
   }
 
@@ -441,6 +449,7 @@ footer {
     display: inline-block;
     padding-top: 4.8vw;
     padding-left: 6.71vw;
+    padding-bottom: 5em;
   }
 
   .author {
@@ -484,20 +493,36 @@ footer {
   .sidebar .author {
     text-transform: uppercase;
     color: RGB(16, 109, 179);
+    margin-top: 1.5em;
+    text-align: center;
+
   }
 
   .sidebar .author h4 {
     font-weight: 400;
     letter-spacing: 0.006em;
+    font-size: 1.25em;
+    margin-top: .75em;
   }
 
   .sidebar .author img {
     border-radius: 50%;
     width: 5.25rem;
+    text-align: center;
+
   }
 
   .sidebar ul {
     padding: 0;
+    margin-top: 0.25em;
+    margin-bottom: 4.6em;
+    font-size: 1.25em;
+
+  }
+
+  .sidebar li {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 
   ul li a {
@@ -505,10 +530,20 @@ footer {
     text-decoration: none;
   }
 
+
   .ad {
       display: block;
       width: 100%;
       margin: 0 auto;
+  }
+
+  .ad_info {
+    display: block;
+    padding-bottom: 3.75em;
+  }
+
+  .ad_info a {
+    display: block;
   }
 
   .sidebar p {
@@ -517,6 +552,14 @@ footer {
     font-size: 1.35em;
     line-height: 1.75em;
     color: RGB(178, 191, 201);
+  }
+
+  .sidebar .sidebar_heading {
+    display: block;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.75em;
+    color: RGB(25, 114, 182);
   }
 
   aside {
@@ -633,20 +676,24 @@ footer {
   }
 
   .button_left {
-    /*padding-top: .45em;
-    padding-right: .45em;
-    padding-bottom: .45em;
-    padding-left: .45em;*/
     background: RGB(94, 104, 111);
     display: inline-block;
     font-size: 1.6em;
+    padding-top: .45em;
+    padding-right: .5em;
+    padding-bottom: .45em;
+    padding-left: .5em;
   }
 
   .button_right {
     background: rgb(164, 179, 191);
     float: right;
     font-size: 1.25em;
-    vertical-align: middle;
+    font-weight: bolder;
+    padding-top: .75em;
+    padding-right: 1em;
+    padding-bottom: .75em;
+    padding-left: 1em;
   }
 
 }

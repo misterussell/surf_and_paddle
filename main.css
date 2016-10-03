@@ -79,6 +79,8 @@ header {
   letter-spacing: -0.009em;
   display: inline-block;
   text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .search a {
@@ -114,6 +116,27 @@ h2 {
 
 .author {
   font-size: 1.25em;
+}
+
+.image_wash {
+  display: inline-block;
+  background-color: RGB(25, 114, 182);
+}
+
+.author .image_wash {
+  border-radius: 50%;
+}
+
+.popular .image_wash {
+  float: left;
+}
+
+.bg_blend {
+  opacity: 0.5;
+}
+
+.image_wash:hover .bg_blend {
+  opacity: 100;
 }
 
 .post .author img {
@@ -170,6 +193,8 @@ main a:link:hover {
   margin: 0 auto;
   width: 100%;
   vertical-align: top;
+  margin-top: 5em;
+  margin-bottom: 1em;
 
 }
 
@@ -186,34 +211,20 @@ main a:link:hover {
   font-weight: 600;
 }
 
-/*IMAGE WASH*/
-
-/*.image_wash {
-  color: RGB(16, 109, 179);
-  opacity: 0.5;
-  float: left;
-  display: inline;
-  vertical-align: middle;
-}*/
-
-.bg_blend {
-  background-color: red;
-  background-blend-mode: multiply;
-}
-
 .sidebar .author img {
   border-radius: 50%;
   width: 7rem;
   display: inline-block;
   text-align: center;
-  margin-top: 5em;
-  margin-bottom: 1em;
+  /*margin-top: 5em;
+  margin-bottom: 1em;*/
   /*background-color: rgba(16, 87, 161, 0.7);*/
 }
 
 .sidebar .author h4 {
   margin: 0;
   text-align: center;
+  padding-top: 1em;
 
 }
 
@@ -313,6 +324,7 @@ aside li h3 {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  z-index: 1;
 }
 
 aside li img {
@@ -489,7 +501,7 @@ footer {
     padding-bottom: 12vw;
     padding-left: 2vw;
     text-align: center;
-    height: 27vh;
+    height: 25.5vh;
     margin: 0 auto;
   }
 
@@ -535,6 +547,7 @@ footer {
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
+    opacity: 50%;
   }
 
   .post .author h4 {
@@ -561,13 +574,13 @@ footer {
     width: 25.2%;
     display: inline-block;
     margin-left: 5.75vw;
-    padding-top: 4.8vw;
+    padding-top: 1.5vw;
   }
 
   .sidebar .author {
     text-transform: uppercase;
     color: RGB(16, 109, 179);
-    margin-top: 1.5em;
+    /*margin-top: 1.5em;*/
     text-align: center;
 
   }
@@ -576,7 +589,8 @@ footer {
     font-weight: 400;
     letter-spacing: 0.006em;
     font-size: 1.25em;
-    margin-top: .75em;
+    padding-top: .75em;
+    /*margin-top: .25em;*/
   }
 
   .sidebar .author img {

@@ -14,8 +14,7 @@ body {
 
 nav {
   margin: 0 auto;
-  width: 80vw;
-  padding: .5em 0 .5em .5em;
+  text-align: center;
 
 }
 
@@ -99,6 +98,8 @@ main {
   display: block;
   width: 90%;
   margin: 0 auto;
+  padding-top: 5em;
+
 }
 
 h2 {
@@ -185,6 +186,20 @@ main a:link:hover {
   font-weight: 600;
 }
 
+/*IMAGE WASH*/
+
+/*.image_wash {
+  color: RGB(16, 109, 179);
+  opacity: 0.5;
+  float: left;
+  display: inline;
+  vertical-align: middle;
+}*/
+
+.bg_blend {
+  background-color: red;
+  background-blend-mode: multiply;
+}
 
 .sidebar .author img {
   border-radius: 50%;
@@ -193,7 +208,7 @@ main a:link:hover {
   text-align: center;
   margin-top: 5em;
   margin-bottom: 1em;
-
+  /*background-color: rgba(16, 87, 161, 0.7);*/
 }
 
 .sidebar .author h4 {
@@ -251,7 +266,7 @@ main a:link:hover {
 }
 
 aside {
-  width: 90%;
+  width: 100%;
 }
 
 .popular h2 {
@@ -259,9 +274,11 @@ aside {
   border-top: .01em solid RGB(231, 235, 238);
   padding-top: 2.25rem;
   padding-bottom: 2.5rem;
-  margin-left: 1rem;
-
+  margin: 0 auto;
+  font-size: 4em;
+  /*margin-left: 1rem;*/
 }
+
 aside a:link {
   text-decoration: none;
   color: white;
@@ -302,7 +319,9 @@ aside li img {
   width: 100%;
   text-align: center;
   height: 10em;
-  margin: 0 1em 0 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  /*margin: 0 1em 0 1em;*/
 }
 
 footer {
@@ -387,13 +406,21 @@ footer {
   text-align: center;
 }
 
+
 .button_right {
   background: rgb(164, 179, 191);
   float: right;
   /*width: 5em;*/
 }
 
+.button_hover:hover .button_left {
+  background: RGB(8, 52, 82);
+}
 
+.button_hover:hover .button_right {
+  background: RGB(16, 109, 179);
+
+}
 
 @media (min-width: 700px) {
 
@@ -401,6 +428,7 @@ footer {
     margin: 0 auto;
     width: 80vw;
     padding: .5em 0 .5em .5em;
+    text-align: left;
 
   }
 
@@ -616,7 +644,11 @@ footer {
   .popular h2 {
     padding-top: 2.25rem;
     padding-bottom: 2.5rem;
-    margin-left: 2.25rem;
+    padding-left: 2.25rem;
+    letter-spacing: .007em;
+    border-top: .01em solid RGB(231, 235, 238);
+    text-align: center;
+    font-size: 6.25em;
     letter-spacing: .007em;
   }
 
@@ -646,7 +678,7 @@ footer {
     width: 25%;
     margin: 0;
     padding: 0;
-    float: right;
+    float: left;
     /*background: RGB(8, 52, 82);*/
   }
 
@@ -681,7 +713,7 @@ footer {
     clear: both;
     vertical-align: middle;
     padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
   }
 
   .bottom ul {

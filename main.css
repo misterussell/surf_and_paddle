@@ -42,6 +42,8 @@ header {
   margin: 0 auto;
   height: 26.5vh;*/
   text-align: center;
+  padding-bottom: 1.5em;
+
 }
 
 .title h1 {
@@ -75,8 +77,9 @@ header {
 .search {
   font-size: 1.1em;
   color: rgb(8, 52, 82);
-  float: right;
   letter-spacing: -0.009em;
+  display: inline-block;
+  text-align: center;
 }
 
 .search a {
@@ -141,6 +144,12 @@ main a:link:hover {
   font-size: 1.59em;
   line-height: 1.65em;
   color: RGB(117, 125, 131);
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
+
+.post p:last-child {
+  padding-bottom: 10em;
 }
 
 .pullquote {
@@ -148,9 +157,9 @@ main a:link:hover {
   font-size: 1.75em;
   display: block;
   border-left: 0.1em solid rgb(163, 180, 190);
-  padding: 0.75em 0.5em 0.47em .5em;
+  padding: 0.75em 0.5em 0.3em .5em;
   text-transform: uppercase;
-  margin: 0.5em 0 0.5em 0;
+  margin: 0.75em 0 1em 0;
 }
 
 /*SIDEBAR START*/
@@ -160,13 +169,30 @@ main a:link:hover {
   margin: 0 auto;
   width: 100%;
   vertical-align: top;
+
 }
+
+.sidebar .author {
+  text-align: center;
+  margin-top: 1em;
+  color: RGB(16, 109, 179);
+}
+
+.sidebar .author h4 {
+  letter-spacing: 0.006em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 
 .sidebar .author img {
   border-radius: 50%;
-  width: 5.25rem;
+  width: 7rem;
   display: inline-block;
   text-align: center;
+  margin-top: 5em;
+  margin-bottom: 1em;
 
 }
 
@@ -178,16 +204,20 @@ main a:link:hover {
 
 .sidebar ul {
   margin: 0 auto;
-  padding: 2em 0 0 0;
+  padding: 0.5em 0 6em 0;
   width: 80%;
   font-size: 1.25em;
+  text-align: center;
 }
 
 .sidebar li {
+  margin: 0 auto;
   display: inline-block;
   padding: 0;
-  width: 25%;
+  width: 26%;
   padding: 0.05em;
+  /*padding-left: 1em;
+  padding-right: 1em;*/
 
 }
 
@@ -227,7 +257,9 @@ aside {
 .popular h2 {
   text-align: center;
   border-top: .01em solid RGB(231, 235, 238);
-  padding-top: 2em;
+  padding-top: 2.25rem;
+  padding-bottom: 2.5rem;
+  margin-left: 1rem;
 
 }
 aside a:link {
@@ -236,6 +268,11 @@ aside a:link {
   font-family: 'Oswald', sans-serif;
   font-size: 2em;
   display: block;
+}
+
+ul li a {
+  color: RGB(173, 187, 198);
+  text-decoration: none;
 }
 
 aside ul {
@@ -255,7 +292,7 @@ aside li {
 aside li h3 {
   position: absolute;
   bottom: 1rem;
-  left: 1rem;
+  left: 2rem;
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -276,12 +313,12 @@ footer {
   display: block;
   clear: both;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1.35em;
 }
 
 .bottom ul {
   margin: 0 auto;
-  padding: 2em 0 0 0;
+  padding: 1em 0 0 0;
   width: 80%;
   text-align: center;
 }
@@ -302,7 +339,7 @@ footer {
 
 .logo_block {
   margin: 0 auto;
-  width: 55%;
+  /*width: 55%;*/
 }
 
 .logo_block span {
@@ -312,8 +349,8 @@ footer {
 
 .logo_block img {
   display: inline-block;
-  width: 50px;
   text-align: center;
+  width: 3.25em;
 }
 
 /* Buttons */
@@ -323,13 +360,15 @@ footer {
   display: block;
   clear: both;
   font-weight: lighter;
+  box-sizing: border-box;
 }
 
 .button {
   display: inline-block;
   color: white;
   text-align: center;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
+  margin-right: 0.7em;
 }
 
 .button_left {
@@ -340,11 +379,18 @@ footer {
   background: RGB(94, 104, 111);
   display: inline-block;
   font-size: 1.6em;
+  vertical-align: middle;
+  padding-top: .45em;
+  padding-right: .5em;
+  padding-bottom: .45em;
+  padding-left: .6em;
+  text-align: center;
 }
 
 .button_right {
   background: rgb(164, 179, 191);
   float: right;
+  /*width: 5em;*/
 }
 
 
@@ -415,7 +461,7 @@ footer {
     padding-bottom: 12vw;
     padding-left: 2vw;
     text-align: center;
-    height: 25.5vh;
+    height: 27vh;
     margin: 0 auto;
   }
 
@@ -449,7 +495,7 @@ footer {
     display: inline-block;
     padding-top: 4.8vw;
     padding-left: 6.71vw;
-    padding-bottom: 5em;
+    padding-bottom: 6.5em;
   }
 
   .author {
@@ -479,8 +525,8 @@ footer {
   }
 
   .pullquote {
-    margin-left: 0.5em;
-    padding-left: 0.5em;
+    margin-left: 0.1em;
+    padding-left: 0.6em;
   }
 
   .sidebar {
@@ -509,6 +555,8 @@ footer {
     border-radius: 50%;
     width: 5.25rem;
     text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
 
   }
 
@@ -529,7 +577,6 @@ footer {
     color: RGB(173, 187, 198);
     text-decoration: none;
   }
-
 
   .ad {
       display: block;
@@ -567,8 +614,10 @@ footer {
   }
 
   .popular h2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.5rem;
+    margin-left: 2.25rem;
+    letter-spacing: .007em;
   }
 
   aside a:link {
@@ -611,6 +660,7 @@ footer {
     height: auto;
     margin: 0;
     padding: 0;
+    float: left;
   }
 
   /*opacity: 0.5;*/
@@ -620,24 +670,32 @@ footer {
     background: RGB(8, 52, 82);
     font-family: 'Open Sans', sans-serif;
     width: 100%;
-    font-size: 1.5em;
+    /*content: '';
+    display: block;
+    clear: both;*/
   }
 
   .bottom {
     content: '';
     display: block;
     clear: both;
+    vertical-align: middle;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   .bottom ul {
     /*float: right;*/
     display: inline-block;
-    width: 40%;
-    padding: 0;
+    width: 30%;
+    vertical-align: middle;
+    padding-left: 15.75em;
   }
 
   .bottom li {
     width: auto;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
     /*display: inline-block;*/
   }
 
@@ -656,33 +714,30 @@ footer {
   .logo_block {
     display: inline-block;
     float: left;
+    margin-left: 11em;
   }
 
   .logo_block span {
     float: left;
+    margin: 1em 0 0 1em;
   }
 
   .logo_block img {
-    width: 5em;
-    vertical-align: middle;
     float: left;
+
   }
 
   .button {
     display: inline-block;
     color: white;
     text-align: center;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
   }
 
   .button_left {
     background: RGB(94, 104, 111);
     display: inline-block;
     font-size: 1.6em;
-    padding-top: .45em;
-    padding-right: .5em;
-    padding-bottom: .45em;
-    padding-left: .5em;
   }
 
   .button_right {
@@ -690,10 +745,11 @@ footer {
     float: right;
     font-size: 1.25em;
     font-weight: bolder;
-    padding-top: .75em;
+    padding-top: .74em;
     padding-right: 1em;
-    padding-bottom: .75em;
+    padding-bottom: .74em;
     padding-left: 1em;
+    letter-spacing: .05em;
   }
 
 }
@@ -701,7 +757,7 @@ footer {
 @media (max-width: 800px) {
 
   .button {
-    display: block;
+    display: inline-block;
     text-align: center;
   }
 
